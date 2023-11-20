@@ -2,7 +2,10 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class AppService {
-  getHello(): string {
-    return 'Hello World!';
+  getSuccessMessage(): string {
+    return 'Successfully inserted data!';
+  }
+  getErrorMessage(): string {
+    return 'Something went wrong!';
   }
 }
